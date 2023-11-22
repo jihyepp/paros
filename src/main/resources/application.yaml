@@ -1,0 +1,26 @@
+server:
+  port: 9000
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  shutdown: graceful
+  forward-headers-strategy: framework
+spring:
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true
+    open-in-view: true
+    hibernate:
+      ddl-auto: none
+  flyway:
+    enabled: false
+    baseline-on-migrate: false
+    locations: classpath:db/{vendor}/common
+    baseline-version: 1
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: 'jdbc:mysql://localhost:3306/paros?characterEncoding=UTF-8'
+      username: 'root'
+      password: '9697aa'
