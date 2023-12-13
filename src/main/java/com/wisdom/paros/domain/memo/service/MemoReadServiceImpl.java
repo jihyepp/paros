@@ -17,6 +17,6 @@ public class MemoReadServiceImpl implements MemoReadService {
     @Transactional(readOnly = true)
     public MemoInfoDto read(final Long id) {
         Memo memo = memoQueryService.read(id);
-        return null;
+        return MemoInfoDto.of(memo);
     }
 }
