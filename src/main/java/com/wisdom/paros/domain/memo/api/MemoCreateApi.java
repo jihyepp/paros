@@ -3,7 +3,6 @@ package com.wisdom.paros.domain.memo.api;
 import com.wisdom.paros.domain.memo.dto.request.MemoCreateDto;
 import com.wisdom.paros.domain.memo.service.MemoCreateService;
 import com.wisdom.paros.global.util.IpExporter;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

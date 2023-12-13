@@ -17,4 +17,9 @@ public class MemoQueryServiceImpl implements MemoQueryService {
     public Memo create(final Memo memo) {
         return memoRepository.save(memo);
     }
+
+    @Override
+    public Memo read(Long id) {
+        return memoRepository.findById(id).get();
+    }
 }
