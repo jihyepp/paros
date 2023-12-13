@@ -40,5 +40,5 @@ public class Memo extends BaseEntity{
     private String content;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<MemoTag> memoTags = new ArrayList<>();
+    private List<MemoTag> memoTags;
 }
